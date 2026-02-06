@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Zombie VIP - Join the Zombie Revolution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #0a0a0a; overflow-x: hidden; }
+        .neon-text { text-shadow: 0 0 10px #22c55e, 0 0 20px #22c55e, 0 0 40px #22c55e; }
+        .zombie-glow { animation: pulse-green 2s infinite; }
+        @keyframes pulse-green { 0%, 100% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.5); } 50% { box-shadow: 0 0 40px rgba(34, 197, 94, 0.8); } }
+        .glass-effect { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(135deg, #22c55e 0%, #16a34a 50%, #15803d 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .feature-card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 20px 40px rgba(34, 197, 94, 0.3); }
+        .download-btn { background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); transition: all 0.3s ease; }
+        .download-btn:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(34, 197, 94, 0.6); }
+        .screenshot-slider { scroll-behavior: smooth; scrollbar-width: none; }
+        .screenshot-slider::-webkit-scrollbar { display: none; }
+        .vip-badge { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); animation: shine 2s infinite; }
+        @keyframes shine { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.3); } }
+    </style>
+</head>
+<body class="text-white">
+
+    <nav class="fixed w-full z-50 glass-effect border-b border-green-500/20">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center zombie-glow">
+                    <i class="fas fa-biohazard text-black text-xl"></i>
+                </div>
+                <span class="text-2xl font-bold gradient-text">Grow Zombie VIP</span>
+            </div>
+            <div class="hidden md:flex gap-8 items-center">
+                <a href="#features" class="hover:text-green-400 transition">Features</a>
+                <a href="#gameplay" class="hover:text-green-400 transition">How to Play</a>
+                <a href="#screenshots" class="hover:text-green-400 transition">Screenshots</a>
+                <a href="#download" class="download-btn px-6 py-2 rounded-full font-bold text-black">Download Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-green-900/20 via-black to-black"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="inline-block mb-4 vip-badge px-4 py-1 rounded-full text-black font-bold text-sm animate-bounce">
+                <i class="fas fa-crown mr-2"></i> EXCLUSIVE VIP VERSION
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                <span class="block text-white">Join the</span>
+                <span class="gradient-text neon-text">Zombie Revolution</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Merge, evolve, and dominate with your own zombie army in the most addictive strategy game.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
+                <a href="#download" class="download-btn px-8 py-4 rounded-2xl font-bold text-lg flex items-center gap-3 text-black">
+                    <i class="fas fa-download text-xl"></i>
+                    <span>Free Download</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 relative">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-16 gradient-text">VIP Features</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="feature-card glass-effect rounded-2xl p-6 border border-green-500/20">
+                    <i class="fas fa-infinity text-green-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Unlimited Resources</h3>
+                    <p class="text-gray-400 text-sm">Infinite gold and gems for max evolution.</p>
+                </div>
+                <div class="feature-card glass-effect rounded-2xl p-6 border border-green-500/20">
+                    <i class="fas fa-bolt text-green-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Instant Upgrade</h3>
+                    <p class="text-gray-400 text-sm">Skip waiting times completely.</p>
+                </div>
+                <div class="feature-card glass-effect rounded-2xl p-6 border border-green-500/20">
+                    <i class="fas fa-lock-open text-green-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">All Unlocked</h3>
+                    <p class="text-gray-400 text-sm">Access all legendary and rare zombies.</p>
+                </div>
+                <div class="feature-card glass-effect rounded-2xl p-6 border border-green-500/20">
+                    <i class="fas fa-ad text-green-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Ad-Free</h3>
+                    <p class="text-gray-400 text-sm">Pure gameplay without interruptions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gameplay" class="py-20 bg-gradient-to-b from-black to-green-900/20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-4xl font-bold mb-6 gradient-text">How to Play?</h2>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4"><span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-black font-bold">1</span> Merge similar zombies</li>
+                        <li class="flex gap-4"><span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-black font-bold">2</span> Upgrade skills and abilities</li>
+                        <li class="flex gap-4"><span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-black font-bold">3</span> Battle against human armies</li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2 relative">
+                    <div class="relative rounded-2xl overflow-hidden border-2 border-green-500/30 shadow-2xl">
+                        <img src="images/xx.png" alt="Gameplay UI" class="w-full h-auto object-cover">
+                        <div class="absolute top-4 right-4 bg-green-500 text-black px-3 py-1 rounded-full text-sm font-bold animate-bounce">
+                            VIP Active
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshots" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">In-Game Screenshots</h2>
+            <div class="screenshot-slider flex gap-6 overflow-x-auto pb-8">
+                <div class="flex-shrink-0 w-80 h-auto rounded-2xl border border-green-500/20 overflow-hidden">
+                    <img src="images/1.png" alt="Screen 1" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-shrink-0 w-80 h-auto rounded-2xl border border-green-500/20 overflow-hidden">
+                    <img src="images/2.png" alt="Screen 2" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-shrink-0 w-80 h-auto rounded-2xl border border-green-500/20 overflow-hidden">
+                    <img src="images/3.png" alt="Screen 3" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-shrink-0 w-80 h-auto rounded-2xl border border-green-500/20 overflow-hidden">
+                    <img src="images/4.png" alt="Screen 4" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="py-20 text-center relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-5xl font-bold mb-6 gradient-text">Ready to Begin?</h2>
+            <p class="text-xl text-gray-300 mb-8">Join millions of players and start your empire now.</p>
+            <a href="https://appverification.space/fl/51ogv" target="_blank" class="download-btn px-12 py-6 rounded-2xl font-bold text-2xl inline-flex items-center gap-4 text-black">
+                <i class="fas fa-download"></i> Download VIP Version
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-green-500/10 text-center text-gray-500 text-sm">
+        <p>© 2026 Grow Zombie VIP - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
